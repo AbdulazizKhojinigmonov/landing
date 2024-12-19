@@ -8,7 +8,8 @@
     text-decoration: none;
     font-family: 'IT Hoves', sans-serif;
     color: #222222;
-
+    /* outline: 2px solid green; */
+}
     section {
         padding: 0 calc(10.6vw - 15.8px) calc(11.1vw + 18.4px);
 
@@ -170,7 +171,8 @@
     font-weight: 600;
     font-size: calc(1vw + 14.2px);
     margin-bottom: calc(1.1vw + 9px);
-    text-transform: uppercase;
+            
+
     line-height: 140%;
    }
    .contentCard p{
@@ -205,6 +207,7 @@
     display: block;
     margin: 0 auto;
     margin-top: 24px;
+    
    }
    .corner{
     position: absolute;
@@ -216,14 +219,44 @@
    .primary.mob{
     display: none;
    }
-   @media (max-width: 875px){
-    .primary.desc{
-        display: none;
-    }
-    .primary.mob{
-        display: block;
-    }
+
+
+   .Unit{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .UnitSecond{
+    /* display: flex;
+    justify-content: center; */
+    width: 520px;
+  }
+
+  .UnitFirst{
+    flex-grow: 1;
+    flex-basis: 550px;
+  }
+
+   .UnitFirst img{
+    /* width: calc(19vw + 334px);579-248 */
+    width: 100%;
    }
+
+   .UnitSecond p{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: calc(0.6vw + 18px);/*25-20*/
+    width: 520px;
+    display: flex;
+    
+   }
+
+   .UnitSecond{
+    flex-basis: 460px;
+    flex-grow: 2;
+   }
+
+
+
 
    .infoSite p{
     font-weight: 400;
@@ -235,27 +268,156 @@
    }
 
 
-
-   .Unit{
+   
+   .legendaText{
+    margin-bottom: calc(5.5vw + 19px);
+   }
+   .legendaWrapper{
     display: flex;
+    gap: 20px 51px;
+    align-items: center;
     flex-wrap: wrap;
+   }
+   .legenda{
+    flex-basis: 400px;
+    flex-grow: 1;
+    /* border: 2px solid black; */
+    width: calc(7.7vw + 300px );
+   }
+   .legendaInfo{
+    /* border: 2px solid red; */
+    flex-grow: 1000;
+   }
+   .legendaInfo h3 {
+    font-size: calc(1.1vw + 33px);
+    margin-bottom: calc(1.1vw + 6px);
+   }
+   .legendaInfo span{
+    display: block;
+    font-size: calc(1vw + 14px);
+    width: calc(25.2vw + 233px);
+    margin-bottom: calc(5.5vw + 19.2px);
+   }
+   .legendaCard{
+    display: grid;
+    grid-template: 1fr 1fr / repeat(2, calc(10.2vw + 107px));
+    gap: calc(1.1vw + 25px) calc(8.8vw - 23px);
+    grid-template-areas: "smile" "cup"
+                         "bag" "keyboard";
+   }
+   .Card :nth-child(1){
+    grid-area: smile ;
+   }
+   .Card :nth-child(2){
+    grid-area: cup ;
+   }
+   .Card :nth-child(3){
+    grid-area: bag ;
+   }
+   .Card :nth-child(4){
+    grid-area: keyboard ;
+   }
+
+   .Card img{
+    margin-bottom: 10px;
+   }
+   .Card p{
+    font-size: calc(0.6vw + 14px);
+
+   }
+
+
+   
+    .diplomWrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .diplomImg{
+        width: 100%;
+    }
+
+    .diplom{
+        grid-row: 1/3;
+    }
+
+    .diplomText{
+        flex-grow: 1000;
+        
+    }
+    .diplomTitle h3{
+        font-size: calc(2.7vw + 24px );
+        margin-bottom: 20px;
+        width: calc(20vw + 190px);
+        text-transform: uppercase;
+
+        
+        
+    }
+    .diplomInfo p{
+        font-size: calc(1vw + 14.2px);  
+        display: block;
+        width: calc(19vw + 210px);
+        font-weight: 400;
+    }
+
+
+
+
+   @media (max-width: 1280px) {
+    
+    .legenda{
+        display: flex;
+        justify-content: center;
+    }
+    .legendaInfo{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+  .legendaCard{
+    grid-template-areas: "smile  keyboard"
+                           "cup  bag";
+  } 
+  .diplom{
+    display: flex;
+    justify-content: center;
+    
   }
-  /* .UnitSecond{
-    display: flex;
-    justify-content: center;
-  } */
+  .diplomText{
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+  }
 
-   .UnitFirst img{
-    width: calc(19vw + 334px);/*579-248*/
+
+
+  @media (max-width: 1000px) {
+        .diplomWrapper{
+            grid-template-columns: 1fr;
+        }
+        
+    .diplomTitle{
+        order: 1;
+      }
+    .diplom {
+        grid-row: unset;
+        order: 2;
+    }
+    .diplomInfo {
+        order: 3;
+    }
+}
+
+
    }
-
-   .UnitSecond ul li{
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    font-size: calc(0.6vw + 18px);/*25-20*/
-    width: calc(2.1vw + 248px);
-    display: flex;
-    justify-content: center;
+   @media (max-width: 875px){
+    .primary.desc{
+        display: none;
+    }
+    .primary.mob{
+        display: block;
+    }
+   
    }
-
-} 
