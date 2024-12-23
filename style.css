@@ -370,6 +370,7 @@
         align-items: center;
         padding: calc(4.4vw + 23px) 0 ;
         gap: calc(4vw + 4.6px);
+        margin-bottom: 50px;
     }
     .saleTitle {
         font-size: calc(2vw + 26px);
@@ -395,6 +396,38 @@
         font-size: calc(1.9vw + 3px);
     }
 
+
+
+    .feedbackCard{
+        padding: 20px 50px;
+        background-color:#F0F7FD;
+        border-radius: 12px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+    .feedbackCard img :nth-child(1){
+        margin-bottom: 12px;
+    }
+  
+
+    .feedbackCard p {
+        font-size: 21px;
+    }
+    .feedbackUser{
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+    }
+    .feedbackUser img{
+        border-radius: 50%;
+    }
+    .feedbackUser h3{
+        font-size: 21px;
+        font-weight: 400;
+        width: 170px;
+        margin-bottom: 10px;
+    }
 
 
 
