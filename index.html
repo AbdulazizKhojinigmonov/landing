@@ -194,7 +194,7 @@
         </div>
     </section>
 
-    <section class="saleTimer">
+    <section class="saleTimer" id="timerFirst">
         <h3 class="saleTitle">10% скидка действует</h3>
         <div class="saleTimerContainer">
             <div class="saleTimeCard">
@@ -220,7 +220,7 @@
 
 
 
-    <section class="saleTimer">
+    <section class="saleTimer" id="timerSecond">
         <h3 class="saleTitle">10% скидка действует</h3>
         <div class="saleTimerContainer">
             <div class="saleTimeCard">
@@ -304,9 +304,30 @@
             </ul>
         </div>
     </section>
-    <script>
+   
+  
+    <section class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Базовый пример HTML Splide</h2>
+      
+      
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">Слайд 01</li>
+                  <li class="splide__slide">Слайд 02</li>
+                  <li class="splide__slide">Слайд 03</li>
+              </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+   <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide', {
+            var splide = new Splide('.splide.feedback', {
                 perPage: 3,
                 rewind: true,
                 arrows: false,
