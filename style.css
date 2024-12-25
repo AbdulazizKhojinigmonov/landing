@@ -429,6 +429,125 @@
         margin-bottom: 10px;
     }
 
+    .partyTitle{
+        font-size: calc(2.7vw + 24px);
+    }
+    .getInfo{
+        font-size: calc(1vw + 14px);
+    }
+    .partyPhoto{
+        padding: 20px 50px;
+      
+        border-radius: 12px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .partyPhoto img :nth-child(1) {
+        margin-bottom: 12px;
+    }
+
+
+
+
+/*footer start*/
+footer{
+    padding-left:calc(10.7vw - 17px);
+    background-color:#222222;
+    display: flex;
+    justify-content : space-between;
+}
+.footerLeft{
+    width: 50%;
+    padding-top: calc(4.4vw + 23px);
+}
+.footerLeft h2{
+    color:#fff ;
+}
+.infoLeft{
+ display: flex;
+ flex-direction: column;
+ gap: 24px 0;
+}
+.infoLeft div {
+    display: flex;
+    align-items : center;
+    gap: 0 20px;
+}
+.infoLeft div p{
+    color:#fff;
+    font-size: calc(1vw + 14px);
+    width: calc(13.5vw + 275.3px);
+}
+.footerRight{
+    width: 50%;
+   
+    padding-top: calc(1.3vw + 83px);;
+
+}
+.footerForm{
+    background-color:#fff;
+    border-radius: 12px;
+    padding: 60px calc(3.3vw + 17.5px);
+    width: calc(16.4vw + 265px);
+    text-align: center;
+    position: relative;
+
+}
+.footerForm h3 {
+    font-size: calc(0.4vw + 24px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footerForm p {
+    font-size: calc(0.6vw +14px);
+    margin-bottom: 30px;
+}
+
+
+.footerForm input {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #A1A1A16B;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+    outline: none;
+}
+.footerForm .primary {
+    margin-bottom: 40px;
+    width: calc(6.7vw + 241px);
+}
+.footerForm span {
+    font-size: 18px;
+    display: block;
+    color: gray;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerForm p:nth-child(5){
+    font-size: 18px;
+    color:grey ;
+}
+.sale{
+    width: calc(6vw + 82px);
+    height: calc(6vw + 82px);
+    background-color:#6e3aba;
+    border-radius : 50%;
+    font-size: calc(2.5vw + 30px);
+    display: flex;
+    justify-content: center;
+    align-items :center;
+    font-weight: 700;
+    color:#fff;
+    position: absolute;
+    left: -80px;
+    top: -80px;
+}
+
+/*footer end*/
 
 
 
@@ -477,7 +596,14 @@
         order: 3;
     }
 }
+@media (max-width: 975px){
+   footer{
+    flex-direction: column;
+    /* align-items: center;
+    gap: 88px 0; */
 
+   }
+}
 
    }
    @media (max-width: 875px){
@@ -487,5 +613,8 @@
     .primary.mob{
         display: block;
     }
-   
+   .sale{
+    right: -30px;
+    left: auto;
+   }
    }

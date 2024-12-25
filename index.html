@@ -245,18 +245,6 @@
 
 
 
-
-    <section>
-
-
-        <dic class="feedbackContainer">
-            <div class="feedbackCard"></div>
-            <div class="feedbackCard"></div>
-            <div class="feedbackCard"></div>
-            </div>
-
-    </section>
-
     <section class="splide feedback" aria-label="Splide Basic HTML Example">
         <h2 class="feedbackTitle">Отзывы наших студентов</h2>
         <div class="splide__track">
@@ -306,21 +294,92 @@
     </section>
    
   
-    <section class="splide" aria-labelledby="carousel-heading">
-        <h2 id="carousel-heading">Базовый пример HTML Splide</h2>
+    <section class="splide party" aria-labelledby="carousel-heading">
+        <h2 class="partyTitle">Все еще сомневаешься? </h2>
+        <p class="getInfo">Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
       
       
         <div class="splide__track">
               <ul class="splide__list">
-                  <li class="splide__slide">Слайд 01</li>
-                  <li class="splide__slide">Слайд 02</li>
-                  <li class="splide__slide">Слайд 03</li>
+                  <li class="splide__slide partyPhoto">
+                    <img src="./images/slider_image_01.png" alt="">
+                  </li>
+                  <li class="splide__slide partyPhoto">
+                    <img src="./images/slider_image_02.png" alt="">
+                  </li>
+                  <li class="splide__slide partyPhoto">
+                    <img src="./images/slider_image_03.png" alt="">
+                  </li>
+                  <li class="splide__slide partyPhoto">
+                    <img src="./images/slider_image_04.png" alt="">
+                  </li>
+                  <li class="splide__slide partyPhoto">
+                    <img src="./images/slider_image_05.png" alt="">
+                  </li>
               </ul>
         </div>
     </section>
 
 
+    <footer>
+        <div class="footerLeft">
+            <h2>запишись на курс прямо сейчас!</h2>
+            <div class="infoLeft">
+               <div>
+                <img src="./images/keyboardHTML.svg" alt="">
+                <p>html, css, js</p>
+               </div>
+              <div>
+                <img src="./images/jostic.svg" alt="">
+                <p>Разработка онлайн игр</p>
+              </div>
+              <div>
+                <img src="./images/icon_database.svg" alt="">
+                <p>Введение в Bootstrap и Github</p>
+              </div>
+            </div>
+          
+        </div>
 
+            <div class="footerRight">
+                <div class="footerForm">
+                    <div class="sale">10%</div>
+                    <h3>оставь заявку</h3>
+                    <p>начало обучения: 1 декабря</p>
+                    <form action="">
+                        <input type="text" placeholder="имя ">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="+998">
+                        <button class="primary">Записаться на курс</button>
+                    </form>
+                        <span>Остались вопросы? </span>
+                        <p>Звони: +998 33 135 33 55
+                            Наши консультанты доступны каждый день 
+                            с 10:00 до 22:00.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide.party',{
+            perPage: 3,
+                rewind: true,
+                arrows: false,
+                gap: "30px",
+                breakpoints:{
+                    900:{
+                        perPage: 1,
+                    },
+                },
+          });
+          splide.mount();
+        });
+      </script>
 
 
 
